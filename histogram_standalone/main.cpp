@@ -1,10 +1,8 @@
-
-#include "cuda_runtime.h"
-#include "device_launch_parameters.h"
-
 #include <stdio.h>
 #include <iostream>
 #include <cstring>
+
+#include "histogram.h"
 
 void cpu_histogram(unsigned int* h_out, 
 					unsigned int* h_in, 
