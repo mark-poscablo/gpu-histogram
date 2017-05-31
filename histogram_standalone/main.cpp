@@ -65,7 +65,7 @@ int main()
 
 	unsigned int* gpu_output = new unsigned int[range];
 	start = std::clock();
-	gpu_histogram(gpu_output, input, num_elems, range);
+	gpu_histogram_atomics(gpu_output, input, num_elems, range);
 	duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
 	std::cout << "GPU time: " << duration << std::endl;
 	//for (unsigned int i = 0; i < range; ++i)

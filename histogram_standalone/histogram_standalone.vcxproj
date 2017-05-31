@@ -154,9 +154,13 @@ copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
   <ItemGroup>
     <CudaCompile Include="histogram.cu" />
     <CudaCompile Include="main.cpp" />
+    <CudaCompile Include="scan.cu" />
+    <CudaCompile Include="sort.cu" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="histogram.h" />
+    <ClInclude Include="scan.h" />
+    <ClInclude Include="sort.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
